@@ -1,0 +1,37 @@
+Package -
+C:\Temp\SAM_TEMP\NodeJs10\node-v10.16.3-win-x64\npm init -y
+
+Main React dep (native for mobile)-
+C:\Temp\SAM_TEMP\NodeJs10\node-v10.16.3-win-x64\npm i -S react react-dom react-native
+
+babel-
+C:\Temp\SAM_TEMP\NodeJs10\node-v10.16.3-win-x64\npm i -D babel-core babel-loader babel-preset-env babel-preset-react
+
+npm install @babel/core --save-dev
+npm install @babel/preset-env --save-dev
+npm install @babel/preset-react --save-dev
+
+npm install --save-dev css-loader style-loader
+
+
+Webpack
+C:\Temp\SAM_TEMP\NodeJs10\node-v10.16.3-win-x64\npm i -D webpack webpack-cli webpack-dev-server html-webpack-plugin
+
+INitital installation done
+
+Create .babelrc file and and put - {"presets":["env", "react"]}
+
+Create webpack
+
+Create index.html and index.js inside src foldeer.
+
+Update package.json to define production and local build.
+
+START-
+C:\Temp\SAM_TEMP\NodeJs10\node-v10.16.3-win-x64\npm start
+
+npm install --save-dev jest
+npm install --save-dev identity-obj-proxy
+
+https://medium.com/@siddharthac6/getting-started-with-react-js-using-webpack-and-babel-66549f8fbcb8
+https://github.com/gopinav/React-Tutorials/tree/master/React%20Fundamentals/hello-world/src
