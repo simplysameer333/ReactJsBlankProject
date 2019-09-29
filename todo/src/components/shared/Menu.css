@@ -1,0 +1,28 @@
+.menu-custom {
+    background-color: #BEBEBE !important; 
+    height : 100%;
+    margin-top :0px;
+}
+.menu-item {
+    height: 20px !important; 
+    background-color: #D3D3D3 !important; 
+    margin-left: -40px;    
+    padding-bottom :40px;
+    text-decoration: none;
+}
+
+.menu-item:hover, .menu-item:active, .menu-item:link, .menu-item:visited {
+    background-color: gray !important;
+    text-decoration: none !important;
+    text-decoration-line: none;
+    text-decoration-color: transparent;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+.menu-span {
+    padding-left: 30px;
+}

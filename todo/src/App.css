@@ -1,5 +1,7 @@
 .App {
   margin: 5px;
+  position: relative;
+  
 }
 
 .App-logo {
@@ -20,4 +22,12 @@
 
 .App-intro {
   font-size: large;
+}
+
+.split-size {
+  height: 80% !important;
+}
+
+.menu-right {
+  background-color: #D3D3D3 !important;
 }
