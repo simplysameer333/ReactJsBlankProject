@@ -5,6 +5,8 @@ import java.util.List;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -15,26 +17,25 @@ import com.employee.model.Employee;
 @CrossOrigin
 public class EmployeeController {
 	
+	List<Employee> emplList = new ArrayList<>();
+	
 	@GetMapping("/all")
 	public List<com.employee.model.Employee> getAll() {
-		List<Employee> emplList = new ArrayList<>();
-		
-		Employee e1 = new Employee();
-		e1.setId("1");
-		e1.setFirstName("Sameer");
-		e1.setLastName("Hameed");
-		e1.setCity("Delhi");		
-		
-		Employee e2 = new Employee();
-		e2.setId("2");
-		e2.setFirstName("ABC");
-		e2.setLastName("DEF");
-		e2.setCity("XXX");
-		
-		emplList.add(e1);
-		emplList.add(e2);
 		return emplList;
-	}	
+	}		
 	
+	@PostMapping("/add")
+	  Employee newEmployee(@RequestBody Employee newEmployee) {
+		newEmployee.setId(getRandomIntegerBetweenRange(1,100)); 
+		System.out.println(newEmployee);
+		emplList.add(newEmployee);
+	    return newEmployee;
+	  }
+	
+	
+	public static int getRandomIntegerBetweenRange(int min, int max){
+	    int x = (int)(Math.random()*((max-min)+1))+min;
+	    return x;
+	}
 
 }
