@@ -12,6 +12,12 @@ export const NavigationBar = () => (
             <Nav.Link className = "nav-link-custom" as={Link} to="/">Home</Nav.Link>
           </Nav.Item>
           <Nav.Item>
+             <Nav.Link className = "nav-link-custom" as={Link} to="/inputEmployee">Add Employee</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+             <Nav.Link className = "nav-link-custom" as={Link} to="/employeesInfo">Employees Info</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
              <Nav.Link className = "nav-link-custom" as={Link} to="/about">About</Nav.Link>
           </Nav.Item>
           <Nav.Item>
